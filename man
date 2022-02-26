@@ -1,0 +1,9 @@
+pacshweep : liste les paquets ood
+pacshweep -e : efface les paquets ood avec confirmation a chaque fois et les liste
+pacshweep -fe : force erase, pareil mais sans confirmation
+(beta) pacshweep -r : prompt un choix de paquet pour remplacer les ood et efface le ood selectionné
+pacshweep --version : version
+pacshweep --help, -h : affiche cette aide
+
+options :
+-b : prend en compte tous les binaires et les match avec aur (au cas où certains auraient été installé avec git)
