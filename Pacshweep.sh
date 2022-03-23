@@ -64,9 +64,10 @@ noter version des commandes que j utilise
 
 ### Parsing du code HTML
 #La version est sur la meme ligne que la class flagged et le nom du paquet est sous la ligne contenant la class /packages/...
-#sed -rn 's/.*flagged[^0-9]*([0-9.]+).*/\1/p' raw_list.html > list.txt
 sed -rn 's/.*flagged[^A-Za-z0-9]*([A-Za-z0-9._:.+-]+).*/\1/p' raw_list.html > list.txt
-# - _ + : abc 123 ABC
+sed -rn 's/.*href="\/packages\/[^A-Za-z0-9]*([A-Za-z0-9._:.+-]+).*/\1/p' raw_list.html > list2.txt
+paste -d " " list2.txt list.txt > listF.txt
+rm list.txt list2.txt
 
 
 ### Creation liste pacman :
