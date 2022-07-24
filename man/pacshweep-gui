@@ -1,13 +1,15 @@
 NAME
-	pacshweep-gui - downloads out-of-date database from aur.archlinux.org archlinux.org and archlinux32.org and compares it to your installed packages. Displays menu and options in ncurses.
+	pacshweep-gui - downloads out-of-date database from aur.archlinux.org archlinux.org and archlinux32.org and compares it to your installed packages.
+	Displays menu and options in ncurses.
 
 SYNOPSIS
 	pacshweep-gui opens the ncurses menu.
 
 DESCRIPTION
-	--version : prints the package version 
 
 	--help, -h : displays this help with less
+
+	--version : prints the package version 
 
 EXAMPLES
        pacswheep-gui
@@ -29,4 +31,4 @@ COPYRIGHT
 SEE ALSO
        pacshweep(1)
 
-Rupioe/pacshweep                 July 2022                            PACSHWEEP(1)
+Rupioe/pacshweep                 July 2022                            PACSHWEEP-GUI(1)
