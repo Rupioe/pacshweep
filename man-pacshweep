@@ -1,0 +1,24 @@
+NAME
+	pacshweep - downloads out-of-date database from aur.archlinux.org and 		compares it to your installed packages.
+
+SYNOPSIS
+	pacshweep [OPTION] ...
+
+DESCRIPTION
+	If ran without options, just lists the out-of-date packages.
+	
+	-e, --erase : efface les paquets ood avec confirmation a chaque fois et 	les liste
+
+	-f, --force : force erase, pareil mais sans confirmation
+
+	-r : prompt un choix de paquet pour remplacer les ood et efface le ood 		selectionné
+
+	-u : update, met à jour la DB même si ça fait moins de 24h
+	
+	-v, --verbose : extra execution traces in stdout
+
+	-b : prend en compte tous les binaires et les match avec aur (au cas où 	certains auraient été installé avec git)
+
+	--version : prints the package version 
+
+	--help, -h : displays this help with less

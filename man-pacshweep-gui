@@ -1,0 +1,10 @@
+NAME
+	pacshweep-gui - downloads out-of-date database from aur.archlinux.org and compares it to your installed packages. Displays menu and options in ncurses.
+
+SYNOPSIS
+	pacshweep-gui opens the ncurses menu.
+
+DESCRIPTION
+	--version : prints the package version 
+
+	--help, -h : displays this help with less
