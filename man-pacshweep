@@ -19,10 +19,11 @@ DESCRIPTION
 
 	-b : Compares downloaded database(s) to all the system binaries
 	
-	-t, --type=
-		allows you to select which database you want to use in order to save bandwidth and download time,
-		options are : 32, 64 and aur
-
+	--aur : Downloads only the aur database
+	
+	--arch : Only downloads the official database of your architecture (32bits/64bits).
+		For the 32 bits DB, to-be-deleted packages are selected.
+		
 	--version : prints the package version 
 
 	--help, -h : displays this help with less
@@ -31,7 +32,7 @@ EXAMPLES
        pacswheep -feu
        		Purges your system from the flagged packages without asking you.
 		
-	pacswheep -ve -t aur
+	pacswheep -ve --aur
 		Lists my ood aur packages and asks me whether they should be deleted or not, displays database download traces if there is.
 
 AUTHOR
