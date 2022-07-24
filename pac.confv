@@ -1,0 +1,5 @@
+# Configuration file for pacshweep and pacshweep-gui
+
+# UPDATE_TIME defines the gap bewteen two database downloads. Use nothing or 0 to download each run, no suffix for ticks, s for seconds, mi for minutes, d for days, m for months and y for years.
+# If set to 0 or null then files are deleted after run.
+UPDATE_TIME=1d
