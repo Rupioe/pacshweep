@@ -1,5 +1,5 @@
 NAME
-	pacshweep - downloads out-of-date database from aur.archlinux.org and 		compares it to your installed packages.
+	pacshweep - downloads out-of-date database from aur.archlinux.org archlinux.org and archlinux32.org and 		compares it to your installed packages.
 
 SYNOPSIS
 	pacshweep [OPTION] ...
