@@ -1,5 +1,6 @@
 NAME
-	pacshweep - downloads out-of-date database from aur.archlinux.org archlinux.org and archlinux32.org and 		compares it to your installed packages.
+	pacshweep - downloads out-of-date database from aur.archlinux.org archlinux.org and archlinux32.org and
+	compares it to your installed packages.
 
 SYNOPSIS
 	pacshweep [OPTION] ... -f [FILE]
@@ -7,29 +8,30 @@ SYNOPSIS
 DESCRIPTION
 	If ran without options, just lists the out-of-date packagesof your system from the aur and your architecture database.
 	
+	
+	--arch : Only downloads the official database of your architecture (32bits/64bits).
+		For the 32 bits DB, to-be-deleted packages are selected.
+
+	--aur : Downloads only the aur database
+
+	-b, --binaries : Compares downloaded database(s) to all the system binaries
+	
 	-e, --erase : removes out-of-date packages with a yes|no prompt for each
 
 	-f, --force : force erase, pareil mais sans confirmation, if you append a file name it will write the erased packages in it
 
-	-r : prompt un choix de paquet pour remplacer les ood et efface le ood 		selectionné
-
+	-r, --replace : prints a choice of package to replace your obsolete one
+	
 	-u, --update : downloads the database(s) even if it's been less than configured time (see pac.conf)
 	
 	-v, --verbose : extra execution traces in stdout
-
-	-b : Compares downloaded database(s) to all the system binaries
-	
-	--aur : Downloads only the aur database
-	
-	--arch : Only downloads the official database of your architecture (32bits/64bits).
-		For the 32 bits DB, to-be-deleted packages are selected.
 		
+	--help, -h : displays this help with less
+	
 	--version : prints the package version 
 
-	--help, -h : displays this help with less
-
 EXAMPLES
-       pacswheep -feu
+	pacswheep -feu
        		Purges your system from the flagged packages without asking you.
 		
 	pacswheep -ve --aur
