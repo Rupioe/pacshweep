@@ -1,4 +1,7 @@
-![pacshweep](https://user-images.githubusercontent.com/89363735/161449318-2979760e-e44e-4ece-8bcd-56ae3507a13f.png)
+<p class='image code for the git hub display sorry for the inconvenience of markdown reading' align="center">
+  <img src="https://user-images.githubusercontent.com/89363735/161449318-2979760e-e44e-4ece-8bcd-56ae3507a13f.png" alt="![pacshweep](https://user-images.githubusercontent.com/89363735/161449318-2979760e-e44e-4ece-8bcd-56ae3507a13f.png)"/>
+</p>
+
 # /!\ Disclaimer : the man pages and this README are written for the final project, for now the BETA can only list your out of date packages for the aur database, just run the script which is for now pretty simple to understand
 # Pacshweep - The package cleaner
 ## Quick overview
