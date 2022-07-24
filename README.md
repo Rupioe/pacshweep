@@ -9,11 +9,13 @@ A tool to clean your arch system from it's deprecated and out-of-date AUR packag
 
 ## Install from source
 >$ git clone https://github.com/Rupioe/pacshweep
+
 >$ cd pacshweep
 
 
 **Tested on Linux 64 bits :**
 >$ make
+
 >$ sudo make install
 
 ## Install binary
@@ -51,12 +53,12 @@ Or
 ## Dependencies
 
 **Necessary software :**
--wget
--wc
--rm
--cat
--sed
--paste
+- wget
+- wc
+- rm
+- cat
+- sed
+- paste
 
 **For the GUI :**
  - stdio.h  
