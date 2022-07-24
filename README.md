@@ -2,7 +2,7 @@
 # /!\ Disclaimer : the man pages and this README are written for the final project, for now the BETA can only list your out of date packages for the aur database, just run the script which is for now pretty simple to understand
 # Pacshweep - The package cleaner
 ## Quick overview
-A tool to clean your arch system from it's deprecated and out-of-date AUR packages. Pacshweep allows you to know what AUR packages are deprecated on your system and can help you remove or replace them, see man for more details. Coded with GNU bash, version 5.1.4(1)-release.
+A tool to clean your arch system from it's deprecated and out-of-date AUR packages. Pacshweep allows you to know what packages are deprecated on your system and can help you remove or replace them, see man for more details. Coded with GNU bash, and ncurses.
 
 ## Install from source
 >$ git clone https://github.com/Rupioe/pacshweep
