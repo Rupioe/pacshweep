@@ -1,5 +1,5 @@
 ![pacshweep](https://user-images.githubusercontent.com/89363735/161449318-2979760e-e44e-4ece-8bcd-56ae3507a13f.png)
-
+# /!\ Disclaimer : the man pages and this README are written for the final project, for now the BETA can only list your out of date packages for the aur database, just run the script which is for now pretty simple to understand
 # Pacshweep - The package cleaner
 ## Quick overview
 A tool to clean your arch system from it's deprecated and out-of-date AUR packages. Pacshweep allows you to know what AUR packages are deprecated on your system and can help you remove or replace them, see man for more details. Coded with GNU bash, version 5.1.4(1)-release.
@@ -32,8 +32,11 @@ And input your chosen value :
 UPDATE_TIME=1d
 
 is the default value, use nothing to download each run, no suffix for ticks, s for seconds, mi for minutes, d for days, m for months and y for years.
+To save space if the files are going to be re downloaded each time, then they are deleted after each use.
 
 ## Running
+
+An internet connection is needed if you havent set UPDATE_TIME in pac.conf and run pacshweep at least once.
 
 > $ pacshweep --help
 
@@ -45,9 +48,12 @@ Or
 ## Dependencies
 
 **Necessary software :**
-cmake >= *3.18*
-testé avec GNU make *4.3*
-testé avec cc *10.2.1*
+-wget
+-wc
+-rm
+-cat
+-sed
+-paste
 
 **For the GUI :**
  - stdio.h  
