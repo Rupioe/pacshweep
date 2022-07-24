@@ -20,6 +20,7 @@ nom_paquet version
 
 noter version des commandes que j utilise
 prevoir de garder les fichiers telecharges et les update quand ça fait + de 1 jour que ça a pas été update
+mettre des screens de la GUI
 '
 
 
