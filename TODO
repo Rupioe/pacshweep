@@ -1,0 +1,21 @@
+: 'Chaque page contient 2500 paquets
+https://aur.archlinux.org/packages?O=0&SeB=nd&K=&outdated=on&SB=p&SO=d&PP=2500&submit=Go
+On veut incrementer                  ^   cette valeur de 2500 pour changer de "page" et faire le tour de tous les paquets
+
+On va wget chaque incrementation et la wc, quand 2 incrementations auront le meme nombre de mots (inferieur a 1000, ce qui correspond a une page vide de paquets), on effacera ces deux dernieres et on concateinera les autres.
+Ensuite, il faudra extraire les noms des paquets et leurs versions du code html (parsing).
+
+
+A NE PAS OUBLIER :
+Vider le repertoire utilise pour que l utilisation de pacshweep ne laisse pas de paquet la ou on le lance ou dans bin ou il est installe
+Proposer une option pour effacer pacswheep a la fin de la maj
+Voir le format de sortie des paquets pacman :
+pacman --native (install DB) (-Qn)
+pacman --foreign (install externe) (-Qm)
+format output :
+nom_paquet version
+
+noter version des commandes que j utilise
+prevoir de garder les fichiers telecharges et les update quand ça fait + de 1 jour que ça a pas été update
+mettre des screens de la GUI
+'
