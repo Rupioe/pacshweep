@@ -10,25 +10,21 @@ DESCRIPTION
 	--help, -h : displays this help with less
 
 EXAMPLES
-       cat f - g
-              Output f's contents, then standard input, then g's contents.
-
-       cat    Copy standard input to standard output.
+       pacswheep-gui
 
 AUTHOR
-       Written by Torbjorn Granlund and Richard M. Stallman.
+       Written by Rupioe.
 
 REPORTING BUGS
-       GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
-       Report any translation bugs to <https://translationproject.org/team/>
+       Send a mail to rupioe@protonmail.com or fill a bug report on my Github Rupioe/pacshweep.
 
 COPYRIGHT
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
- Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
- Everyone is permitted to copy and distribute verbatim copies
- of this license document, but changing it is not allowed.
+ 	Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ 	Everyone is permitted to copy and distribute verbatim copies
+ 	of this license document, but changing it is not allowed.
 
 SEE ALSO
        pacshweep(1)
