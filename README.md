@@ -22,6 +22,17 @@ There is a GUI available, it is automatically included in the AUR packages and i
 If you don't want to compile the GUI you can use
 >$ make nogui
 
+## Configuration
+You can configure a minimum time to wait before re-downloading the database(s) at pacswheep execution.
+Edit the config file :
+>$ vim ~/.config/pacswheep/pac.conf
+
+And input your chosen value :
+
+UPDATE_TIME=1d
+
+is the default value, use nothing to download each run, no suffix for ticks, s for seconds, mi for minutes, d for days, m for months and y for years.
+
 ## Running
 
 > $ pacshweep --help
