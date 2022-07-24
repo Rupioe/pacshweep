@@ -59,6 +59,7 @@ Or
 - cat
 - sed
 - paste
+- install
 
 **For the GUI :**
  - stdio.h  
