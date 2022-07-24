@@ -19,4 +19,28 @@ noter version des commandes que j utilise
 prevoir de garder les fichiers telecharges et les update quand ça fait + de 1 jour que ça a pas été update
 mettre des screens de la GUI
 les DB stockées sont dans /tmp et sont terminées en .pacshweep
+
+
+autres DB a add : 
+https://archlinux.org/packages/?sort=&q=&maintainer=&flagged=Flagged
+https://www.archlinux32.org/packages/?sort=&q=&bugs=&del=To+Be+Deleted&uses_upstream=&uses_modification=
+
+
+La GUI refletera simplement les options du CLI, comment ? Tout recoder ?
+
+expliquer les options de make comme DESTFILE et les fichiers d'installation
+
+revoir l'orga du man pacshweep avec le man man
+
+se renseigner sur les propriétés du fichier /tmp où sont stockées les DB
+
+pac.conf, UPDATE_TIME, env var ou parsing du fichier de conf pour recup la donnée ?
+
+todo liste dans l'ordre :
+-comparer aur.DB -Qm + -Qn
+-intégrer le systeme d'options
+-PAS D'OPTION -> list + cmp aur+arch
+      -> integrer DB arch32 et 64
+-integrer arch detection et options --arch et --aur
+...
 '
