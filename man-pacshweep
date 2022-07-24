@@ -2,23 +2,53 @@ NAME
 	pacshweep - downloads out-of-date database from aur.archlinux.org archlinux.org and archlinux32.org and 		compares it to your installed packages.
 
 SYNOPSIS
-	pacshweep [OPTION] ...
+	pacshweep [OPTION] ... -f [FILE]
 
 DESCRIPTION
 	If ran without options, just lists the out-of-date packages.
 	
-	-e, --erase : efface les paquets ood avec confirmation a chaque fois et 	les liste
+	-e, --erase : removes out-of-date packages with a yes|no prompt for each
 
-	-f, --force : force erase, pareil mais sans confirmation
+	-f, --force : force erase, pareil mais sans confirmation, if you append a file name it will write the erased packages in it
 
 	-r : prompt un choix de paquet pour remplacer les ood et efface le ood 		selectionné
 
-	-u : update, met à jour la DB même si ça fait moins de 24h
+	-u, --update : downloads the database(s) even if it's been less than configured time (see pac.conf)
 	
 	-v, --verbose : extra execution traces in stdout
 
-	-b : prend en compte tous les binaires et les match avec aur (au cas où 	certains auraient été installé avec git)
+	-b : Compares downloaded database(s) to all the system binaries
+	
+	-t, --type=
+		allows you to select which database you want to use in order to save bandwidth and download time,
+		options are : 32, 64 and aur
 
 	--version : prints the package version 
 
 	--help, -h : displays this help with less
+
+EXAMPLES
+       pacswheep -feu
+       		Purges your system from the flagged packages without asking you.
+		
+	pacswheep -ve -t aur
+		Lists my ood aur packages and asks me whether they should be deleted or not, displays database download traces if there is.
+
+AUTHOR
+       Written by Rupioe.
+
+REPORTING BUGS
+       Send a mail to rupioe@protonmail.com or fill a bug report on my Github Rupioe/pacshweep.
+
+COPYRIGHT
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ 	Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ 	Everyone is permitted to copy and distribute verbatim copies
+ 	of this license document, but changing it is not allowed.
+
+SEE ALSO
+       pacshweep(1)
+
+Rupioe/pacshweep                 July 2022                            PACSHWEEP(1)
