@@ -42,5 +42,22 @@ todo liste dans l'ordre :
 -PAS D'OPTION -> list + cmp aur+arch
       -> integrer DB arch32 et 64
 -integrer arch detection et options --arch et --aur
-...
+-integrer la comparaison avec tous les binaires et ajouter la prise en charge de l'option -b
+-intégrer l'option --help
+-intégrer l'option --version
+-integrer --force et son option
+-integrer la prise en charge du fichier de configuration, sa creation et sa lecture
+-regler l'endroit de stockage des fichiers temporaires.pacshweep
+-integrer la prise en charge de UPDATE_TIME
+-integrer l'option --update
+-integrer --erase avec un beau prompt (gestion des dependances ?)
+-integrer --replace ; le prompt joli, et le systeme de remplacage (hard)
+-faire des gros tests
+-coder la GUI avec des fonctions bidons derriere
+-coder les fonctions derrieres sur le modele de celle ci dessus (hard)
+-review le projet entier et tester les man les binaires etc
+-ça part en prod !
+ggwp
+
+.
 '
