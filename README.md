@@ -60,6 +60,8 @@ Or
 - sed
 - paste
 - install
+- sort
+- comm
 
 **For the GUI :**
  - stdio.h  
