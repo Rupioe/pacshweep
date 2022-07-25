@@ -42,7 +42,7 @@
 	done
 
 
-### Parsing HTML
+	### Parsing HTML
 # The package version is on the same line as the flagged class and the package name is under the lines containing the /packages/ class.
 sed -rn 's/.*flagged[^A-Za-z0-9]*([A-Za-z0-9._:.+-]+).*/\1/p' raw_list.html > list.txt
 sed -rn 's/.*href="\/packages\/[^A-Za-z0-9]*([A-Za-z0-9._:.+-]+).*/\1/p' raw_list.html > list2.txt
@@ -50,7 +50,14 @@ paste -d " " list2.txt list.txt > listF.txt
 rm list.txt list2.txt raw_list.html
 
 	### Pacman list generation :
-#pacman -Qn > paclist.txt
-#pacman -Qm >> paclist.txt
+pacman -Qn > paclist.txt
+pacman -Qm >> paclist.txt
 
+	### Comparing and printing :
+sort -d listF.txt > listF_sorted.txt
+sort -d paclist.txt > paclist_sorted.txt
+comm -12 paclist_sorted.txt listF_sorted.txt
 
+	### Cleaning :
+rm paclist.txt paclist_sorted.txt listF.txt
+mv listF_sorted.txt db_aur.pacshweep
