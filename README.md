@@ -68,5 +68,3 @@ Or
 - stdlib.h  
 - ncurses.h
 
-## Contact me
-rupioe@protonmail.com for bug report.
